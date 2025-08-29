@@ -25,7 +25,7 @@ def mark_complete(index):
     completedTasks.append(complete)
 
 # Step 6: Save/load tasks (extra stretch for today)
-
+    #skippppp
 
 # Demo flow (you can run this file directly: python todo.py)
 if __name__ == "__main__":
@@ -35,3 +35,5 @@ if __name__ == "__main__":
     mark_complete(0)
     view_tasks()
     #save_tasks()
+    #    (～￣▽￣)～
+
