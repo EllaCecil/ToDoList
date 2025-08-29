@@ -2,13 +2,14 @@
 
 # Step 1: Start with an empty list to hold tasks
 tasks = []
-
+completedTasks = []
 # Step 2: Add a task
 def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
 def view_tasks():
+    print("Tasks Remaining:")
     for i in tasks:
         print(i)
 # Step 4: Delete a task
@@ -19,8 +20,9 @@ def delete_task(task):
 
 # Step 5: Mark task complete
 def mark_complete(index):
-
-
+    complete = tasks[index]
+    tasks.remove(tasks[index])
+    completedTasks.append(complete)
 
 # Step 6: Save/load tasks (extra stretch for today)
 
@@ -32,4 +34,4 @@ if __name__ == "__main__":
     view_tasks()
     mark_complete(0)
     view_tasks()
-    save_tasks()
+    #save_tasks()
