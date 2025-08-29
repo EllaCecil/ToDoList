@@ -9,11 +9,17 @@ def add_task(task):
 
 # Step 3: View tasks
 def view_tasks():
-    print(tasks)
+    for i in tasks:
+        print(i)
 # Step 4: Delete a task
-
+def delete_task(task):
+    for i in tasks:
+        if i == task:
+            tasks.remove(i)
 
 # Step 5: Mark task complete
+def mark_complete(index):
+
 
 
 # Step 6: Save/load tasks (extra stretch for today)
